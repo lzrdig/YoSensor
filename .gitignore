@@ -242,3 +242,4 @@ ModelManifest.xml
 .fake/
 /YocotoWeb/wwwroot/lib
 /YoctopuceWeb/Scripts
+/YoctoWeb/wwwroot/lib
