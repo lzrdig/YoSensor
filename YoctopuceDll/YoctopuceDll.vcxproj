@@ -57,6 +57,13 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>IF NOT ($(ConfigurationName)) == (Debug) GOTO END
+cd $(ProjectDir)
+copy /y $(SolutionDir)$(Configuration)\*.dll $(SolutionDir)YoctoWpfYSensor\bin\Debug
+copy /y $(SolutionDir)$(Configuration)\*.pdb $(SolutionDir)YoctoWpfYSensor\bin\Debug
+:END</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
