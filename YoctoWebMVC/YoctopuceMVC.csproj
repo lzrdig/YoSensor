@@ -99,6 +99,10 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IHubConfigService.cs" />
+    <Compile Include="yapi\yocto_api.cs" />
+    <Compile Include="yapi\yocto_datalogger.cs" />
+    <Compile Include="yapi\yocto_genericsensor.cs" />
+    <Compile Include="yapi\yocto_voltage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
